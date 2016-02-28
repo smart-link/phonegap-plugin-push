@@ -85,6 +85,19 @@ public class GCMIntentService extends GcmListenerService implements PushConstant
 
                 showNotificationIfPossible(getApplicationContext(), extras);
             }
+
+            // Open YonhapnewsActivity
+            boolean isActive = PushPlugin.isActive();
+            boolean isInForeground = PushPlugin.isInForeground();
+            Log.d(LOG_TAG, "isActive = " + isActive);
+            Log.d(LOG_TAG, "isInForeground = " + isInForeground);
+            if (!isInForeground) {
+                Intent intent = new Intent(this, YonhapnewsActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
         }
     }
 

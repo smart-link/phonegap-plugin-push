@@ -46,6 +46,10 @@
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:name="com.adobe.phonegap.push.PushHandlerActivity" android:exported="true"/>
+            <activity
+                android:name="com.adobe.phonegap.push.YonhapnewsActivity"
+                android:theme="@style/TranslucentTheme" android:exported="true">
+            </activity>
 
             <receiver
                 android:name="com.google.android.gms.gcm.GcmReceiver"
@@ -87,7 +91,9 @@
 		<source-file src="src/android/com/adobe/phonegap/push/PushPlugin.java" target-dir="src/com/adobe/phonegap/push/" />
         <source-file src="src/android/com/adobe/phonegap/push/RegistrationIntentService.java" target-dir="src/com/adobe/phonegap/push/" />
         <source-file src="src/android/com/adobe/phonegap/push/PermissionUtils.java" target-dir="src/com/adobe/phonegap/push/" />
+        <source-file src="src/android/com/adobe/phonegap/push/YonhapnewsActivity.java" target-dir="src/com/adobe/phonegap/push/" />
 
+        <source-file src="src/android/com/adobe/phonegap/push/yonhapnews_values.xml" target-dir="res/values/" />
 	</platform>
 
 	<!-- ios -->
