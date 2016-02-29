@@ -93,7 +93,13 @@
         <source-file src="src/android/com/adobe/phonegap/push/PermissionUtils.java" target-dir="src/com/adobe/phonegap/push/" />
         <source-file src="src/android/com/adobe/phonegap/push/YonhapnewsActivity.java" target-dir="src/com/adobe/phonegap/push/" />
 
+        <source-file src="src/android/com/adobe/phonegap/push/yonhapnews_layout.xml" target-dir="res/layout/" />
         <source-file src="src/android/com/adobe/phonegap/push/yonhapnews_values.xml" target-dir="res/values/" />
+        <source-file src="src/android/com/adobe/phonegap/push/mipmap/mipmap-hdpi/icon.png" target-dir="res/mipmap-hdpi/" />
+        <source-file src="src/android/com/adobe/phonegap/push/mipmap/mipmap-mdpi/icon.png" target-dir="res/mipmap-mdpi/" />
+        <source-file src="src/android/com/adobe/phonegap/push/mipmap/mipmap-xhdpi/icon.png" target-dir="res/mipmap-xhdpi/" />
+        <source-file src="src/android/com/adobe/phonegap/push/mipmap/mipmap-xxhdpi/icon.png" target-dir="res/mipmap-xxhdpi/" />
+        <source-file src="src/android/com/adobe/phonegap/push/mipmap/mipmap-xxxhdpi/icon.png" target-dir="res/mipmap-xxxhdpi/" />
 	</platform>
 
 	<!-- ios -->
